@@ -1,3 +1,5 @@
+package Rettangolo;
+
 public class Rettangolo {
     private double lato1;
     private double lato2;
