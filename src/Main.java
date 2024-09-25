@@ -1,3 +1,6 @@
+import E_commerce.Articolo;
+import E_commerce.Carrello;
+import E_commerce.Cliente;
 import Rettangolo.Rettangolo;
 import Sim.Chiamata;
 import Sim.SIM;
@@ -27,6 +30,23 @@ public class Main {
         utente1.aggiungiCredito(10);
         utente1.setLista(lista);
         utente1.stampa();
+
+        System.out.println("---------------------------esercizio 3--------------------------");
+
+        Cliente cliente1 = new Cliente(250,"marco zagaria","marco@gmail.com","25/09/2024");
+
+        Articolo articolo1 = new Articolo(1,"articolo 1",29.9,10);
+        Articolo articolo2 = new Articolo(2,"articolo 2",19.9,3);
+        Articolo articolo3 = new Articolo(3,"articolo 3",10,5);
+        Articolo articolo4 = new Articolo(4,"articolo 4",17.9,20);
+        Articolo articolo5 = new Articolo(5,"articolo 5",27,7);
+
+        Carrello carrellocliente1 = new Carrello(cliente1);
+        Articolo[] listaArticoliComprati = { articolo1, articolo2, articolo3 };
+        carrellocliente1.setElencoArticoli(listaArticoliComprati);
+        System.out.println(carrellocliente1.getTotaleCarrello());
+
+
     }
 
 
